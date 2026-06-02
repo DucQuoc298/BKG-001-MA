@@ -8,14 +8,18 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     void onLoginSuccess() {
-      context.go(AppRoutes.login);
+      // context.go(AppRoutes.login);
     }
     return Scaffold(
       body: Center(
         child: AppButton(
-          title: 'Login',
-          isLoading: false,
+          text: 'Login',
           onPressed: onLoginSuccess,
+          style: ElevatedButton.styleFrom(
+            padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
+            backgroundColor: Colors.blue,
+            textStyle: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold), // <--- Bỏ color ở đây
+          ),
         ),
       ),
     );

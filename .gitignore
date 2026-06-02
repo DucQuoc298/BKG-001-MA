@@ -48,3 +48,6 @@ app.*.map.json
 **/._*
 build
 pubspec.lock
+
+**/Podfile
+**/Podfile.lock

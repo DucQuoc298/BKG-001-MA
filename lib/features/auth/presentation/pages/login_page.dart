@@ -19,9 +19,12 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Center(
-        child: AppButton(
-            title: 'Home',
-            onPressed: onHomeRoute ),
+        child: AppTextField(
+          // controller: usernameController,
+          label: 'Username',
+          hintText: 'Nhập username',
+          prefixIcon: Icons.person_outline,
+        ),
       ),
     );
   }
